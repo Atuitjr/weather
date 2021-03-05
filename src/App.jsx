@@ -17,7 +17,7 @@ function App() {
         const askAPI = async () => {
             if (ask) {
                 const key = '579faf2a66da26680bffe62a3f2c83b8';
-                const uri = 'http://api.openweathermap.org/data/2.5/weather?';
+                const uri = 'https://api.openweathermap.org/data/2.5/weather?';
                 const url = `${uri}q=${city},${country}&appid=${key}`;
 
                 const answer = await fetch(url);
